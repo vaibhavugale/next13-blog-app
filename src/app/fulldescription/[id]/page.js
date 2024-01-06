@@ -21,8 +21,8 @@ const page = async ({ params }) => {
 
         <div>
         {
-          topic?.tags?.map((tag)=>{
-          return <span className="m-1">#{tag}</span>
+          topic?.tags?.map((tag , index)=>{
+          return <span  key={index} className="m-1">#{tag}</span>
         })
       }
         </div>

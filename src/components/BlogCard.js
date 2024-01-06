@@ -38,8 +38,8 @@ const BlogCard = ({ data}) => {
       </div>
       <div className=" overflow-clip">
       {
-        data?.tags?.map((tag)=>{
-          return <span className="m-1">#{tag}</span>
+        data?.tags?.map((tag,index)=>{
+          return <span key={index} className="m-1">#{tag}</span>
         })
       }
       </div>
